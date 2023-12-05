@@ -1,0 +1,68 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #5f0899;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 5px solid #c52573;
+    border-radius: 10px;
+    padding: 10px 60px;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.game{
+    width: 440px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    justify-content: center;
+}
+
+.card{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-size: 30px;
+}
+
+.reset{
+    text-transform: uppercase;
+    padding: 15px 20px;
+    width: 90%;
+    background-color:#c52573;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+.reset:hover{
+    cursor: pointer;
+}
+
+.reset:active{
+    background-color: #96094d;
+}
