@@ -25,6 +25,8 @@ let openCards = [];
 
 let points = 0;
 
+let checkId = "";
+
 let shuffledEmojis = emojis.sort(() => (Math.random() > 0.5 ? 2 : -1));
 
 for(let i = 0; i < emojis.length; i++){
@@ -37,6 +39,7 @@ for(let i = 0; i < emojis.length; i++){
 }
 
 function shuffleEmojis(){
+    checkId = "";
     shuffledEmojis = emojis.sort(() => (Math.random() > 0.5 ? 2 : -1));    
 
     for(let i = 0; i < emojis.length; i++){
@@ -49,7 +52,6 @@ function shuffleEmojis(){
 }
 
 function handleClick(){
-    let checkId = "";
     if(openCards.length < 2 && this.id != checkId){
         this.classList.add("open");
         checkId = this.id;
