@@ -76,7 +76,7 @@ function checkMatchingCards(){
 }
 
 function checkWin(){
-    if(points === 6){
+    if(points === 9){
         points = 0;
         document.querySelector(".modal").classList.add("visible");
     }
