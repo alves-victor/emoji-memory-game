@@ -150,6 +150,10 @@ h2{
         padding: 10px;
     }
 
+    .modal{
+        width: 300px;
+    }
+
     .game{
         min-width: 280px;
         max-width: 320px;
@@ -178,6 +182,10 @@ h2{
 
     .container{
         padding: 10px;
+    }
+
+    .modal{
+        width: 260px;
     }
 
     .game{
