@@ -7,15 +7,19 @@ const emojis = [
     "🍷",
     "🗿",
     "🗿",
-    "👌",
-    "👌",
     "🎶",
     "🎶",
-    "💋",
-    "💋",
     "👓",
-    "👓"
+    "👓",
+    "💋",
+    "💋",
+    "👌",
+    "👌",
+    "💕",
+    "💕"
 ];
+
+
 
 let openCards = [];
 
@@ -72,7 +76,7 @@ function checkMatchingCards(){
 }
 
 function checkWin(){
-    if(points === 8){
+    if(points === 6){
         points = 0;
         document.querySelector(".modal").classList.add("visible");
     }
