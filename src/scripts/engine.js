@@ -69,9 +69,11 @@ function checkMatchingCards(){
         openCards[1].classList.remove("open");
         openCards.pop();
         openCards.pop();
+        checkId = "";
     }else if(openCards[0].innerHTML === openCards[1].innerHTML){
         openCards.pop();
         openCards.pop();
+        checkId = "";
         points += 1;
         checkWin();
     }
