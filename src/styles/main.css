@@ -17,6 +17,7 @@ body{
     border: 5px solid #c52573;
     border-radius: 10px;
     padding: 10px 60px;
+    overflow: hidden;
 }
 
 h2{
@@ -27,7 +28,8 @@ h2{
 }
 
 .game{
-    width: 440px;
+    width: 680px;
+    height: 330px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -55,7 +57,7 @@ h2{
     position: absolute;
     inset: 0;
     background-color: #c52573;
-    
+
     transition: 0.5s;
     transform: rotateY(0deg);
     backface-visibility: hidden;
@@ -72,7 +74,7 @@ h2{
 .reset{
     text-transform: uppercase;
     padding: 15px 20px;
-    width: 90%;
+    width: 250px;
     background-color:#c52573;
     border: none;
     border-radius: 10px;
@@ -84,9 +86,6 @@ h2{
 
 .reset:hover{
     cursor: pointer;
-}
-
-.reset:active{
     background-color: #96094d;
 }
 
@@ -135,4 +134,92 @@ h2{
 .visible{
     visibility: visible;
     opacity: 1;
+}
+
+/* responsividade */
+
+/* mobile */
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .container{
+        padding: 10px;
+    }
+
+    .game{
+        min-width: 280px;
+        max-width: 320px;
+        height: fit-content;
+    }
+
+    .card{
+        width: 75px;
+        height: 75px;
+    }
+
+    .reset{
+        min-width: 280px;
+        max-width: 300px;
+    }
+}
+
+/* galaxy fold */
+
+@media only screen and (width: 280px){
+
+    h2{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .container{
+        padding: 10px;
+    }
+
+    .game{
+        width: 280px;
+        height: fit-content;
+    }
+
+    .card{
+        width: 70px;
+        height: 70px;
+    }
+
+    .reset{
+        font-size: 20px;
+    }
+}
+
+/* tablet */
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .container{
+        padding: 10px;
+    }
+
+    .game{
+        min-width: 481px;
+        max-width: 500px;
+        height: fit-content;
+    } 
+}
+
+/* telas pequenas */
+
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+    .game{
+        min-width: 481px;
+        max-width: 520px;
+        height: fit-content;
+    } 
+
+    .card{
+        height: 100px;
+        width: 100px;
+    }
 }
